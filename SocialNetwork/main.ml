@@ -1,0 +1,12 @@
+open SocialNetwork.SocialNetwork;;
+let g=SocialNetwork.empty();;
+let g=SocialNetwork.insert_user "sandra" g;;
+let g=SocialNetwork.insert_user "francesco" g;;
+let g=SocialNetwork.insert_user "coco" g;;
+let g=SocialNetwork.add_friend "sandra" "francesco" g SocialNetwork.Friendship;;
+let g=SocialNetwork.add_friend "sandra" "coco" g SocialNetwork.Friendship;;
+let g=SocialNetwork.remove_friendship "sandra" "coco" g SocialNetwork.Friendship;;
+let g=SocialNetwork.add_friend "sandra" "coco" g SocialNetwork.Prestige;;
+let g=SocialNetwork.add_friend "sandra" "coco" g SocialNetwork.Friendship;;
+let g=SocialNetwork.remove_friendship "sandra" "coco" g SocialNetwork.Friendship;;
+g;;
