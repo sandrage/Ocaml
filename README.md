@@ -1,2 +1,2 @@
-# OcamlGraphs
-excercise
+# Ocaml
+excercises
